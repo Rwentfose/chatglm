@@ -24,8 +24,8 @@ function App() {
                 assistantMeta={{avatar:'/pdsu.jpg'}}
                 locale="en-US"
                  request={ async (messages) => {
-                   const res =   await axios.post('/api',{
-                          prompt:messages[messages.length-1].content
+                     const res =   await axios.post('/api',{
+                          prompt:messages[messages.length-1].content,
                       })
                     return new Response(res.data.response);
                 }}
