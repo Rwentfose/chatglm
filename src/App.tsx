@@ -21,7 +21,7 @@ function App() {
                     height: '100vh',
                     width: '100vw',
                 }}
-                assistantMeta={{avatar:'http://211.69.16.48:8888/src/assets/pdsu.jpg'}}
+                assistantMeta={{avatar:'http://211.69.16.48:8888/public/pdsu.jpg'}}
                 locale="en-US"
                  request={ async (messages) => {
                    const res =   await axios.post('/api',{
